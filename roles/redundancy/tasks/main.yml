@@ -1,0 +1,12 @@
+---
+- name: Install rsync
+  apt:
+    name: "rsync"
+    state: latest
+
+- name: Create daily job to back up data
+  cron:
+    name: "Sync samba server data"
+    minute: "0"
+    hour: "5"
+    job: rsync -av --delete /samba_data/ /backup_samba/
