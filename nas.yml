@@ -1,7 +1,0 @@
----
-- name: Setup NAS with redundancy
-  hosts: samba
-
-  roles:
-    - samba
-    - redundancy
