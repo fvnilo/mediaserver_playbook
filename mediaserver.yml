@@ -1,13 +1,12 @@
 ---
 - name: Setup NAS with redundancy
-  hosts: samba
-
+  hosts: all
   roles:
     - role: samba
       tags: [ network ]
 
     - role: redundancy
-      tags: [ network ]
+      tags: [ network, backup ]
 
     - role: mediaserver
       tags: [ media ]
