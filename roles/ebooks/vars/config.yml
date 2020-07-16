@@ -1,0 +1,3 @@
+---
+cops_install_dir: /var/www/html/ebooks
+data_dir: /samba_data/eBooks/

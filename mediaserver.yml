@@ -10,3 +10,6 @@
 
     - role: mediaserver
       tags: [ media ]
+
+    - role: ebooks
+      tags: [ media, books ]

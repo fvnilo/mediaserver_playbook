@@ -29,3 +29,17 @@ There are three tags you can filter in or out [details here](https://docs.ansibl
 - `network`: For NAS and redundancy roles and tasks.
 - `backup`: For redundancy roles and tasks.
 - `media`: For media server roles and tasks.
+
+## Components
+
+### NAS Server
+A NAS server will be installed to be able to share data over the network.
+
+#### Redundancy
+As a backup mecanimism, the data of the NAS server can be synced to another hard drive.
+
+### Media Server
+In order to use the data of the NAS server, a Plex server was installed. Once installed, you can configure it at `http://<your-ip>:32400/web/`
+
+## eBooks Server
+Since I have a great deal of ebooks, the playbook installs nginx and add a PHP application to display a Calibre library.
